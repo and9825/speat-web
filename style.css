@@ -14,8 +14,8 @@ body {
 }
 
 .wrapper {
-  height: 480px;
-  width: 320px;
+  height: 60em;
+  width: 60em;
   background: #2e394b;
   overflow: hidden;
   position: relative;
@@ -27,7 +27,7 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 7.2961%;
   width: 54px;
   cursor: pointer;
   background: url(https://iamturner.co.uk/codepen/menu-icon.png) no-repeat center;
