@@ -1,0 +1,8 @@
+div.w3-container>h5{
+  text-align: left;
+  float:left;
+}
+div.w3-container>h1{
+  text-align: right;
+  float:right;
+}
