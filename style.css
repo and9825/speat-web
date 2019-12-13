@@ -1,8 +1,49 @@
-div.w3-container>h5{
+div.w3-container h5{
   text-align: left;
-  float:left;
+  float:left; 
+  font-style: italic;
+
 }
-div.w3-container>h1{
+div.w3-container h1{
   text-align: right;
+  font-size:14px;
   float:right;
+  font-weight: bold;
+ 
+}
+body,h1,h5 {
+    font-family: "Raleway", sans-serif
+}
+
+body,html {
+    height: 100%
+}
+
+.bgimg {
+    background-image: url(immagini/sfondoweb.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;}
+
+.w3-speat,.w3-hover-speat:hover{
+      color:#9F005D!important;
+      background-color:#9F005D!important}
+
+button{
+  color:white!important;
+  background-color:#9F005D!important
+}
+div.w3-container,.w3-speat h1{
+  text-align: left;
+  font-size:14px;
+  float:left;
+  color: white;
+}
+div.w3-display-bottomright,w3-container{
+color:#9F005D;
+font-size: 18px;}
+
+div.w3-container,.w3-speat{
+  margin-top:8px;
+  padding:5px;
 }
