@@ -26,6 +26,7 @@ html {
 .bgimg {
     background-image: url(immagini/sfondoweb.jpg);
     min-height: 100%;
+    min-width: 100%;
     background-position: center;
     background-size: cover;
 }

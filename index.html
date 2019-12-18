@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-oOs/gFavzADqv3i5nCM+9CzXe3e5vXLXZ5LZ7PplpsWpTCufB7kqkTlC9FtZ5nJo" crossorigin="anonymous">
@@ -63,14 +63,22 @@
     <div class="row h-100 justify-content-center align-items-center">
 
         <div class="col-4">
-            <div style=" font-family: 'Comfortaa', cursive;  color:#9F005D; text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D; font-size: xx-large;">
+            <div style=" font-family: 'Comfortaa', cursive; display: block; margin: 0 auto; width: 100px; color:#9F005D; text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D; font-size: xx-large;">
                 <p> <b>spEAT</b></p>
             </div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable" style="display: block; margin: 0 auto; width: 100px;">
                     Menù
-                </button>
+            </button>
+
         </div>
+
+        <!--<p style="font-weight:bold"><i style=" text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D; font-size:12px; position: absolute; right: 100%; ">powered by</i> spEAT</p>-->
+
+
     </div>
+
+
 </div>
 
 <!-- Button trigger modal -->
@@ -99,7 +107,68 @@
                 <div class="row align-items-center simpleCart_shelfItem">
                     <div class="col-4">
                         <a class="item_add" href="javascript:;">
+                            <h class="item_name"> Antipasto dello chef
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€12.50</h>
+                    </div>
+                </div>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
+                        <a class="item_add" href="javascript:;">
+                            <h class="item_name"> Carpaccio di manzo
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€8.50</h>
+                    </div>
+                </div>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
+                        <a class="item_add" href="javascript:;">
+                            <h class="item_name"> Bruschetta scomposta
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€4.50</h>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-3">
+                        <h4>Main Courses</h2>
+                    </div>
+                    <div class="col-10">
+                    </div>
+                </div>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
+                        <a class="item_add" href="javascript:;">
                             <h class="item_name"> Paccheri norcia e zucchine
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€8.50</h>
+                    </div>
+                </div>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
+                        <a class="item_add" href="javascript:;">
+                            <h class="item_name"> Spaghetti all'assassina
                         </a>
                     </div>
                     <div class="col-6">
@@ -109,87 +178,95 @@
                         <h class="item_price">€7.50</h>
                     </div>
                 </div>
-
-
-
-
-
-                <div class="w3-container w3-speat">
-                    <h1>Main Courses</h1>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
+                        <a class="item_add" href="javascript:;">
+                            <h class="item_name"> Entrecote di manzo
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€13.50</h>
+                    </div>
                 </div>
-                <br>
-                <div class="w3-container">
-                    <div class="simpleCart_shelfItem">
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
                         <a class="item_add" href="javascript:;">
-
-
+                            <h class="item_name"> Tonno scottato
+                        </a>
                     </div>
-
-                    <div class="simpleCart_shelfItem">
-                        <a class="item_add" href="javascript:;">
-                            <h5 class="item_name"> Paccheri norcia e zucchine </a>
-                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                        <h1 class="item_price">€9.50</h1>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
                     </div>
-
-                    <div class="simpleCart_shelfItem">
-                        <a class="item_add" href="javascript:;">
-                            <h5 class="item_name"> Entrecote di manzo </a>
-                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                        <h1 class="item_price">€12.50</h1>
+                    <div class="col-2">
+                        <h class="item_price">€14.50</h>
                     </div>
-
-                    <div class="simpleCart_shelfItem">
-                        <a class="item_add" href="javascript:;">
-                            <h5 class="item_name"> Tonno scottato alla soia </a>
-                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                        <h1 class="item_price">€14.00</h1>
-                    </div>
-
-
-
-
                 </div>
-                <div class="w3-container w3-speat">
-                    <h1>Desserts</h1>
+                <div class="row">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-3">
+                        <h4>Desserts</h2>
+                    </div>
+                    <div class="col-10">
+                    </div>
                 </div>
-                <br>
-
-                <div class="w3-container">
-                    <div class="simpleCart_shelfItem">
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
                         <a class="item_add" href="javascript:;">
-                            <h5 class="item_name"> Soufflè al cioccolato bianco </a>
-                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                        <h1 class="item_price">€4.50</h1>
+                            <h class="item_name"> Souffle al cioccolato bianco
+                        </a>
                     </div>
-
-                    <div class="simpleCart_shelfItem">
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€4.50</h>
+                    </div>
+                </div>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
                         <a class="item_add" href="javascript:;">
-                            <h5 class="item_name"> Torta della nonna </a>
-                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                        <h1 class="item_price">€4.50</h1>
+                            <h class="item_name"> Torta della nonna
+                        </a>
                     </div>
-
-
-                    <div class="simpleCart_shelfItem">
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€4.50</h>
+                    </div>
+                </div>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
                         <a class="item_add" href="javascript:;">
-                            <h5 class="item_name"> Cheesecake Oreo </a>
-                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                        <h1 class="item_price">€4.50</h1>
+                            <h class="item_name"> Cheesecake oreo
+                        </a>
                     </div>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€4.50</h>
+                    </div>
+                </div>
+                <div class="row">
 
+
+                    <div class="col-4">
+
+                    </div>
 
                 </div>
 
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <div class="modal-footer justify-content-between">
+                <h5 class="align-left" style="color: black; text-align: left;">Totale
+                    <div class="simpleCart_total"></div>
+                </h5>
+
                 <!-- carrello -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
             Comanda
@@ -208,16 +285,12 @@
 
                             </div>
                             <div class="modal-body" style="color: black;">
-                                <!-- show the cart -->
                                 <div class="simpleCart_items"></div>
 
-                                <!-- cart quantity (ex. 3) -->
                                 <h4>
                                     <h3 style="text-align: left; color: black; font-size: 10px;">Nr. Prodotti
                                         <h3 class="simpleCart_quantity" style="font-size: 10px;"></h3>
                                     </h3>
-
-                                    <!-- cart total (ex. $23.11)-->
 
                                     <h2 style="color: black; text-align: right;">Totale
                                         <div class="simpleCart_total"></div>
@@ -236,9 +309,7 @@
         </div>
     </div>
 
-    <div class="w3-display-bottomright w3-container" style="text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D;">
-        <p style="font-weight:bold"><i style="font-size:12px">powered by</i> spEAT</p>
-    </div>
+
 
 
 </html>
