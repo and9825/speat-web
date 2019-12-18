@@ -16,221 +16,227 @@
 
 </head>
 
-<body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplecartjs/3.0.5/simplecart.min.js"></script>
-    <script>
-        simpleCart({
-            checkout: {
-                type: "PayPal",
-                email: "you@yours.com"
-            },
-            cartStyle: "table",
-            tax: 0.075,
-            currency: "EUR",
-            cartColumns: [{
-                attr: "name",
-                label: "Nome"
-            }, {
-                attr: "price",
-                label: "Prezzo",
-                view: 'currency'
-            }, {
-                view: "decrement",
-                label: false,
-                text: "-"
-            }, {
-                attr: "quantity",
-                label: "Qta"
-            }, {
-                view: "increment",
-                label: false,
-                text: "+"
-            }, {
-                attr: "total",
-                label: "SubTotale",
-                view: 'currency'
-            }, {
-                view: "remove",
-                text: "Rimuovi",
-                label: false
-            }]
-        });
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplecartjs/3.0.5/simplecart.min.js"></script>
+<script>
+    simpleCart({
+        checkout: {
+            type: "PayPal",
+            email: "you@yours.com"
+        },
+        cartStyle: "table",
+        tax: 0.075,
+        currency: "EUR",
+        cartColumns: [{
+            attr: "name",
+            label: "Nome"
+        }, {
+            attr: "price",
+            label: "Prezzo",
+            view: 'currency'
+        }, {
+            view: "decrement",
+            label: false,
+            text: "-"
+        }, {
+            attr: "quantity",
+            label: "Qta"
+        }, {
+            view: "increment",
+            label: false,
+            text: "+"
+        }, {
+            attr: "total",
+            label: "SubTotale",
+            view: 'currency'
+        }, {
+            view: "remove",
+            text: "Rimuovi",
+            label: false
+        }]
+    });
+</script>
 
-    <div class="bgimg w3-display-container w3-text-white">
-        <div class="w3-display-middle w3-jumbo" style=" font-family: 'Comfortaa', cursive;  color:#9F005D; text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D;">
-            <p> <b>spEAT</b></p>
+
+
+
+<div class="container h-100 bgimg">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-12">
+            <div style=" font-family: 'Comfortaa', cursive;  color:#9F005D; text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D;">
+                <p> <b>spEAT</b></p>
+            </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+                    Menù
+                </button>
         </div>
+    </div>
+</div>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary w3-display-middle" data-toggle="modal" data-target="#exampleModalScrollable" style=" font-size: 0.875em; font-weight: bold; position:relative; top:37em">
-    Menù
-  </button>
+<!-- Button trigger modal -->
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalScrollableTitle"><b>Menù</b></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle"><b>Menù</b></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-1">
                     </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-1">
-                            </div>
-                            <div class="col-3">
-                                <h2>Starters</h2>
-                            </div>
-                            <div class="col-10">
-                            </div>
-                        </div>
-                        <div class="row align-items-center simpleCart_shelfItem">
-                            <div class="col-4">
-                                <a class="item_add" href="javascript:;">
-                                    <h class="item_name"> Paccheri norcia e zucchine
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
-                            </div>
-                            <div class="col-2">
-                                <h class="item_price">€7.50</h>
-                            </div>
-                        </div>
+                    <div class="col-3">
+                        <h4>Starters</h2>
+                    </div>
+                    <div class="col-10">
+                    </div>
+                </div>
+                <div class="row align-items-center simpleCart_shelfItem">
+                    <div class="col-4">
+                        <a class="item_add" href="javascript:;">
+                            <h class="item_name"> Paccheri norcia e zucchine
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" value="1" min="0" class="item_Quantity form-control-sm"></h5>
+                    </div>
+                    <div class="col-2">
+                        <h class="item_price">€7.50</h>
+                    </div>
+                </div>
 
 
 
 
 
-                        <div class="w3-container w3-speat">
-                            <h1>Main Courses</h1>
-                        </div>
-                        <br>
-                        <div class="w3-container">
-                            <div class="simpleCart_shelfItem">
-                                <a class="item_add" href="javascript:;">
+                <div class="w3-container w3-speat">
+                    <h1>Main Courses</h1>
+                </div>
+                <br>
+                <div class="w3-container">
+                    <div class="simpleCart_shelfItem">
+                        <a class="item_add" href="javascript:;">
 
-
-                            </div>
-
-                            <div class="simpleCart_shelfItem">
-                                <a class="item_add" href="javascript:;">
-                                    <h5 class="item_name"> Paccheri norcia e zucchine </a>
-                                <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                                <h1 class="item_price">€9.50</h1>
-                            </div>
-
-                            <div class="simpleCart_shelfItem">
-                                <a class="item_add" href="javascript:;">
-                                    <h5 class="item_name"> Entrecote di manzo </a>
-                                <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                                <h1 class="item_price">€12.50</h1>
-                            </div>
-
-                            <div class="simpleCart_shelfItem">
-                                <a class="item_add" href="javascript:;">
-                                    <h5 class="item_name"> Tonno scottato alla soia </a>
-                                <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                                <h1 class="item_price">€14.00</h1>
-                            </div>
-
-
-
-
-                        </div>
-                        <div class="w3-container w3-speat">
-                            <h1>Desserts</h1>
-                        </div>
-                        <br>
-
-                        <div class="w3-container">
-                            <div class="simpleCart_shelfItem">
-                                <a class="item_add" href="javascript:;">
-                                    <h5 class="item_name"> Soufflè al cioccolato bianco </a>
-                                <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                                <h1 class="item_price">€4.50</h1>
-                            </div>
-
-                            <div class="simpleCart_shelfItem">
-                                <a class="item_add" href="javascript:;">
-                                    <h5 class="item_name"> Torta della nonna </a>
-                                <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                                <h1 class="item_price">€4.50</h1>
-                            </div>
-
-
-                            <div class="simpleCart_shelfItem">
-                                <a class="item_add" href="javascript:;">
-                                    <h5 class="item_name"> Cheesecake Oreo </a>
-                                <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
-
-                                <h1 class="item_price">€4.50</h1>
-                            </div>
-
-
-                        </div>
 
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <!-- carrello -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+
+                    <div class="simpleCart_shelfItem">
+                        <a class="item_add" href="javascript:;">
+                            <h5 class="item_name"> Paccheri norcia e zucchine </a>
+                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
+
+                        <h1 class="item_price">€9.50</h1>
+                    </div>
+
+                    <div class="simpleCart_shelfItem">
+                        <a class="item_add" href="javascript:;">
+                            <h5 class="item_name"> Entrecote di manzo </a>
+                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
+
+                        <h1 class="item_price">€12.50</h1>
+                    </div>
+
+                    <div class="simpleCart_shelfItem">
+                        <a class="item_add" href="javascript:;">
+                            <h5 class="item_name"> Tonno scottato alla soia </a>
+                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
+
+                        <h1 class="item_price">€14.00</h1>
+                    </div>
+
+
+
+
+                </div>
+                <div class="w3-container w3-speat">
+                    <h1>Desserts</h1>
+                </div>
+                <br>
+
+                <div class="w3-container">
+                    <div class="simpleCart_shelfItem">
+                        <a class="item_add" href="javascript:;">
+                            <h5 class="item_name"> Soufflè al cioccolato bianco </a>
+                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
+
+                        <h1 class="item_price">€4.50</h1>
+                    </div>
+
+                    <div class="simpleCart_shelfItem">
+                        <a class="item_add" href="javascript:;">
+                            <h5 class="item_name"> Torta della nonna </a>
+                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
+
+                        <h1 class="item_price">€4.50</h1>
+                    </div>
+
+
+                    <div class="simpleCart_shelfItem">
+                        <a class="item_add" href="javascript:;">
+                            <h5 class="item_name"> Cheesecake Oreo </a>
+                        <input type="number" value="1" min="0" class="item_Quantity" style="width: 3em;"></h5>
+
+                        <h1 class="item_price">€4.50</h1>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- carrello -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
             Comanda
           </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable.modal-xl" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalScrollableTitle">Comanda</h5>
-                                        <button type="button" class="close" data-dismiss="modal1" aria-label="Close">
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable.modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalScrollableTitle">Comanda</h5>
+                                <button type="button" class="close" data-dismiss="modal1" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
 
 
-                                    </div>
-                                    <div class="modal-body" style="color: black;">
-                                        <!-- show the cart -->
-                                        <div class="simpleCart_items"></div>
+                            </div>
+                            <div class="modal-body" style="color: black;">
+                                <!-- show the cart -->
+                                <div class="simpleCart_items"></div>
 
-                                        <!-- cart quantity (ex. 3) -->
-                                        <h4>
-                                            <h3 style="text-align: left; color: black; font-size: 10px;">Nr. Prodotti
-                                                <h3 class="simpleCart_quantity" style="font-size: 10px;"></h3>
-                                            </h3>
+                                <!-- cart quantity (ex. 3) -->
+                                <h4>
+                                    <h3 style="text-align: left; color: black; font-size: 10px;">Nr. Prodotti
+                                        <h3 class="simpleCart_quantity" style="font-size: 10px;"></h3>
+                                    </h3>
 
-                                            <!-- cart total (ex. $23.11)-->
+                                    <!-- cart total (ex. $23.11)-->
 
-                                            <h2 style="color: black; text-align: right;">Totale
-                                                <div class="simpleCart_total"></div>
-                                            </h2>
-                                        </h4>
+                                    <h2 style="color: black; text-align: right;">Totale
+                                        <div class="simpleCart_total"></div>
+                                    </h2>
+                                </h4>
 
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="javascript:;" class="simpleCart_empty"><button type="button" class="btn btn-secondary">Svuota</button></a>
-                                        <button onclick="location.href='comandaInviata.html'" type="button" class="btn btn-primary">Invia Ordine</button>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="javascript:;" class="simpleCart_empty"><button type="button" class="btn btn-secondary">Svuota</button></a>
+                                <button onclick="location.href='comandaInviata.html'" type="button" class="btn btn-primary">Invia Ordine</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-        </div>
-        <div class="w3-display-bottomright w3-container" style="text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D;">
-            <p style="font-weight:bold"><i style="font-size:12px">powered by</i> spEAT</p>
-        </div>
+    <div class="w3-display-bottomright w3-container" style="text-shadow: -0.8px 0 #9F005D, 0 0.8px #9F005D, 0.8px 0 #9F005D, 0 -0.8px #9F005D;">
+        <p style="font-weight:bold"><i style="font-size:12px">powered by</i> spEAT</p>
     </div>
 
 
