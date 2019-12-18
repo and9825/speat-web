@@ -201,7 +201,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalScrollableTitle">Comanda</h5>
-                                <button type="button" class="close" data-dismiss="modal1" aria-label="Close">
+                                <button type="button" class="close" data-dismiss-modal="modal1" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
 
@@ -247,6 +247,10 @@
 <script src="./bootstrap-input-spinner.js"></script>
 <script>
     $("input[type='number']").inputSpinner();
+
+    $("button[data-dismiss-modal=modal1]").click(function() {
+        $('#modal1').modal('hide');
+    });
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="./script.js"></script>
